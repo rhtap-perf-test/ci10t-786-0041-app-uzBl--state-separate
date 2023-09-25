@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-wazj
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0041-tenant/ci10t-786-0041-app/devfile-sample-wazj@sha256:1b55bfc9cb8a7075a18b2ef6a32bd3ad53e7299d1b3997cac1c059c10c1f5895
+        name: my-nodejs
+        resources: {}
+status: {}
